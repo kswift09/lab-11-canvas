@@ -12,15 +12,13 @@ function draw() {
 	// draw stuff here!
 
 	var color= prompt("give me a color")
-
+	var radius=prompt("Enter a Radius")
+    
 	if (color== "red"){
-
 	context.fillStyle = "#ff0000"
-	context.beginPath();
-context.arc(150, 150, 45, 0, 2 * Math.PI, true);
-context.closePath();
-context.fill();
+	   
 }
+
 	else if (color== "blue"){
 		context.fillStyle = "#0000ff"
 		context.beginPath();
@@ -28,8 +26,10 @@ context.fill();
 context.arc(150, 150, 45, 0, 2 * Math.PI, true);
 context.closePath();
 context.fill();
-
+		
 	}
+
+
 	else if (color== "green"){
 
 		context.fillStyle = "#00ff00"
@@ -40,12 +40,19 @@ context.fill();
 	
 	}
 
+	 if (radius=="80"){
+	    context.beginPath();
+        context.arc(150, 150, 80, 0, 2 * Math.PI, true);
+        context.closePath();
+        context.fill();
+}
 	
-	context.fillStyle = "#00ff00"
-		context.beginPath();
-context.arc(150, 150, 45, 0, 2 * Math.PI, true);
-context.closePath();
-context.fill();
+	else if (radius=="50"){
+		 context.beginPath();
+        context.arc(150, 150, 50, 0, 2 * Math.PI, true);
+        context.closePath();
+        context.fill();
+	}	
 
 
 }
