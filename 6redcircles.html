@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Template</title>
+
+</head>
+<body onload="draw(13,25,10)">
+<canvas id="sketch" width="600" height="600">
+</canvas>
+<script>
+var sketch = document.getElementById('sketch');
+var context = sketch.getContext("2d");
+
+
+		context.fillStyle = "#ff4500"
+		context.beginPath();
+		context.arc(150, 190, 200, 0, 2 * Math.PI, true);
+		context.closePath();
+		context.fill();
+	
+	
+		context.fillStyle = "#ff3500"
+		context.beginPath();
+		context.arc(150, 190,175, 0, 2 * Math.PI, true);
+		context.closePath();
+		context.fill();
+
+
+
+		context.fillStyle = "#ff2500"
+		context.beginPath();
+		context.arc(150, 190, 150, 0, 2 * Math.PI, true);
+		context.closePath();
+		context.fill();
+
+		context.fillStyle = "#ff1500"
+		context.beginPath();
+		context.arc(150, 190, 115, 0, 2 * Math.PI, true);
+		context.closePath();
+		context.fill();
+
+		context.fillStyle = "#ff0015"
+		context.beginPath();
+		context.arc(150, 175, 100, 0, 2 * Math.PI, true);
+		context.closePath();
+		context.fill();
+
+		context.fillStyle = "#ff0005"
+		context.beginPath();
+		context.arc(150, 175, 75, 0, 2 * Math.PI, true);
+		context.closePath();
+		context.fill();
+</script>
+</body>
+</html>
