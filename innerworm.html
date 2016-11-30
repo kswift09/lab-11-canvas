@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Template</title>
+
+</head>
+<body onload="draw(13,25,10)">
+<canvas id="sketch" width="800" height="800">
+</canvas>
+<script>
+function draw(){
+var sketch = document.getElementById('sketch');
+var context = sketch.getContext("2d");
+
+
+	for(j=0; j<10; j=j+1){
+		for(i=20; i>0; i=i-1){
+		if(i%2==0) {context.fillStyle = "#000000"}
+			else{context.fillStyle = "#ff00ff"}
+		context.beginPath();
+		context.arc(10*i, 400, 10*i,30, 2 * Math.PI, true);
+		context.closePath();
+		context.fill();
+
+		
+		
+	}
+	   }
+		
+}
+</script>
+</body>
+</html>

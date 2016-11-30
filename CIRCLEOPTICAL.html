@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Template</title>
+
+</head>
+<body onload="draw(13,25,10)">
+<canvas id="sketch" width="800" height="800">
+</canvas>
+<script>
+function draw(){
+var sketch = document.getElementById('sketch');
+var context = sketch.getContext("2d");
+
+
+		context.fillStyle = "#ff4500"
+		context.beginPath();
+		context.arc(400, 400, 75, 0, 2 * Math.PI, true);
+		context.closePath();
+		context.fill();
+	
+		for(i=200; i>0; i=i-1){
+		if(i%2==0) {context.fillStyle = "#ff3500"}
+			else{context.fillStyle = "#0050ff"}
+		context.beginPath();
+		context.arc(300, 300,10*i, 0, 2 * Math.PI, true);
+		context.closePath();
+		context.fill();
+
+		}
+
+	}	
+</script>
+</body>
+</html>
