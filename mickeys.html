@@ -13,31 +13,25 @@ var sketch = document.getElementById('sketch');
 var context = sketch.getContext("2d");
 
 
-		
+		for(j=0; j<20; j=j+1){
 	
 		for(i=0; i<10; i=i+1){
-			
-			
-
-
 			context.beginPath();
-			context.arc(75+i*100, 90,30, 0, 2 * Math.PI, true);
+			context.arc(75+i*100, 90+j*100,30, 0, 2 * Math.PI, true);
 			context.closePath();
 			context.fill();
 
 			context.beginPath();
-			context.arc(50+i*100, 50, 17, 0, 2 * Math.PI, true);
+			context.arc(50+i*100, 50+j*100, 17, 0, 2 * Math.PI, true);
 			context.closePath();
 			context.fill();
 
 			context.beginPath();
-			context.arc(100+i*100, 50, 17, 0, 2 * Math.PI, true);
+			context.arc(100+i*100, 50+j*100, 17, 0, 2 * Math.PI, true);
 			context.closePath();
 			context.fill();
-
-
 		}
-			
+		}	
 		
 	}	
 </script>
